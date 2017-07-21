@@ -91,7 +91,7 @@ class Notebooks extends Component {
 
     constructor(props) {
         super(props);
-        this.state.books = [];
+
     }
 
     render() {
