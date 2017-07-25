@@ -371,7 +371,7 @@ export default Button; // Don’t forget to use export default!
 
 ```js
 import React, { Component } from 'react';
-import Button from './Button'; // Import a component from another file
+import Button from './Button'; components
 
 class DangerButton extends Component {
   render() {
