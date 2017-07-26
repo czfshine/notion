@@ -23,3 +23,5 @@ yarn-error.log*
 
 # webstorm
 .idea/
+stdout.txt
+stderr.txt
