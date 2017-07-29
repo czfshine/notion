@@ -4,6 +4,11 @@
   "private": true,
   "dependencies": {
     "bootstrap": "3.1.1",
+    "hypermd": "github:laobubu/HyperMD",
+    "codemirror": "^5.22.0",
+    "marked": "^0.3.6",
+    "mathjax": "^2.7.0",
+    "rollup": "^0.40.2",
     "jquery": "3.1.1",
     "node-sass": "^4.5.3",
     "react": "^15.6.1",
@@ -11,7 +16,8 @@
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
     "react-scripts": "1.0.10",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "requirejs":"^2.3.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,4 +25,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
+
 }
