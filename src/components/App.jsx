@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import "jquery/dist/jquery.min"
-import '../App.css';
+import '../App.scss';
 import "bootstrap/dist/css/bootstrap.min.css"
 import  "../dashboard.css"
 
