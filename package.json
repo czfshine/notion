@@ -11,9 +11,12 @@
     "mathjax": "^2.7.0",
     "node-sass": "^4.5.3",
     "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.0.2",
     "react": "^15.6.1",
     "react-bootstrap": "0.31.1",
+    "react-codemirror": "^1.0.0",
     "react-dom": "^15.6.1",
+    "react-mdl": "^1.10.3",
     "react-redux": "^5.0.5",
     "react-scripts": "1.0.10",
     "redux": "^3.7.2",
@@ -23,8 +26,9 @@
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

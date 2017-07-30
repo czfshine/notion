@@ -1,17 +1,21 @@
 import React, {Component} from 'react';
-
-import HeadName from "./headname";
-import HeadBox from "./headbox"
+import Ico from  "./ico"
+import {Navigation,Header} from "react-mdl";
 class HeadBar extends Component {
     render() {
         return (
-            <div className="navbar navbar-default navbar-fixed-top" role="navigation">
-                <div className="container-fluid">
-                    <HeadName/>
-                    <HeadBox/>
+            <Header title="洛书">
+            <Navigation>
+                <a className="mdl-navigation__link" href="#">分享</a>
+                <a className="mdl-navigation__link" href="#">风格</a>
+                <a className="mdl-navigation__link" href="#">Slack</a>
+                <a className="mdl-navigation__link" href="#">更多</a>
 
-                </div>
-            </div>
+                <a className="mdl-navigation__link" href="#">
+                    <Ico name="plus"/>
+                </a>
+            </Navigation>
+            </Header>
         );
     }
 }

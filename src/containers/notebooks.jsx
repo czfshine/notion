@@ -9,7 +9,7 @@ let Notebooks=({dispatch})=>{
         return (
             <ul className="nav nav-sidebar">
 
-                <li><a onClick={
+                <li><a className="mdl-navigation__link"  onClick={
                     e=>{
                         e.preventDefault()
                         dispatch(togglenotebook(1))
@@ -17,14 +17,14 @@ let Notebooks=({dispatch})=>{
                     }
                 }>团队页面</a></li>
                 <li>
-                    <a href="#">
+                    <a className="mdl-navigation__link"  href="#">
                         <Ico name="chevron-right"/>
                         <Ico name="book"/>
                         页面1
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a className="mdl-navigation__link"  href="#">
                         <Ico name="chevron-right"/>
                         <Ico name="book"/>
                         页面2

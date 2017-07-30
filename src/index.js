@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './style/index.scss';
+import 'react-mdl/extra/material.css';
+import 'react-mdl/extra/material.js';
 import registerServiceWorker from './registerServiceWorker';
 
 import App from './components/App';
@@ -21,3 +23,4 @@ ReactDOM.render(<Provider store={store}>
     <App />
 </Provider>, document.getElementById('root'));
 
+registerServiceWorker()
