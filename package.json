@@ -25,7 +25,8 @@
     "react-scripts": "1.0.10",
     "redux": "^3.7.2",
     "requirejs": "^2.3.4",
-    "rollup": "^0.40.2"
+    "rollup": "^0.40.2",
+    "sass-loader": "^6.0.6"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
