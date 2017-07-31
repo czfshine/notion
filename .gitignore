@@ -25,3 +25,4 @@ src/**/*.css
 .idea/
 stdout.txt
 stderr.txt
+.vscode/chrome/
