@@ -6,7 +6,7 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
 
-import {App} from "../src/components/App.jsx"
+import HeadBar from "../src/components/headbar.jsx"
 storiesOf('Welcome', module).add('to Storybook', 
           () => <Welcome showApp={linkTo('Button')} />);
 
@@ -16,4 +16,4 @@ storiesOf('Button', module)
   .add('with some emoji', 
         () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>)
   .add('App', 
-        () => <App></App>);
+        () => <HeadBar/>);
