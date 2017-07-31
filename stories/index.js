@@ -1,19 +1,14 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
-
-import { Button, Welcome } from '@storybook/react/demo';
-
+import reducer from '../src/reducers';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import HeadBar from "../src/components/headbar.jsx"
-storiesOf('Welcome', module).add('to Storybook', 
-          () => <Welcome showApp={linkTo('Button')} />);
+import '../src/style/index.css';
+import 'react-mdl/extra/material.css';
+import 'react-mdl/extra/material.js';
 
-storiesOf('Button', module)
-  .add('with text', 
-        () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', 
-        () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>)
-  .add('App', 
+storiesOf('Bar', module)
+  .add('HeadBar', 
         () => <HeadBar/>);
+
