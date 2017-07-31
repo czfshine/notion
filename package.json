@@ -29,8 +29,8 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
-     "prettier --single-quote --write",
-     "git add"
+      "prettier --single-quote --write",
+      "git add"
     ]
   },
   "scripts": {
@@ -41,6 +41,11 @@
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.1.9"
   }
 }
