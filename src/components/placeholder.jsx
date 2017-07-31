@@ -17,7 +17,7 @@ import "./index2"
 var CodeMirror = require('react-codemirror');
 require('codemirror/lib/codemirror.css');
 
-var Placeholder = ()=>{
-    return     <textarea id="demo"></textarea>
-}
+var Placeholder = () => {
+  return <textarea id="demo" />;
+};
 export default Placeholder;

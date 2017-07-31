@@ -1,11 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class Ico extends Component {
-
-    render() {
-        return (<span className={`glyphicon glyphicon-${String(this.props.name)}`} aria-hidden="true"> </span>);
-
-    }
+  render() {
+    return (
+      <span
+        className={`glyphicon glyphicon-${String(this.props.name)}`}
+        aria-hidden="true"
+      >
+        {' '}
+      </span>
+    );
+  }
 }
 
-export  default  Ico;
+export default Ico;

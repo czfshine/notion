@@ -2,17 +2,20 @@
   "name": "notion",
   "version": "0.1.0",
   "private": true,
-  "homepage":".",
+  "homepage": ".",
   "dependencies": {
     "bootstrap": "3.1.1",
     "codemirror": "^5.22.0",
+    "husky": "^0.14.3",
     "hypermd": "github:laobubu/HyperMD",
     "jquery": "3.1.1",
+    "lint-staged": "^4.0.2",
     "marked": "^0.3.6",
     "mathjax": "^2.7.0",
     "node-sass": "^4.5.3",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.0.2",
+    "prettier": "^1.5.3",
     "react": "^15.6.1",
     "react-bootstrap": "0.31.1",
     "react-codemirror": "^1.0.0",
@@ -24,6 +27,12 @@
     "requirejs": "^2.3.4",
     "rollup": "^0.40.2"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+     "prettier --single-quote --write",
+     "git add"
+    ]
+  },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
@@ -31,6 +40,7 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
   }
 }
