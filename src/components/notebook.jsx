@@ -18,14 +18,14 @@ let Notebooks = ({ dispatch }) => {
         </a>
       </li>
       <li>
-        <a className="mdl-navigation__link" href="#">
+        <a className="mdl-navigation__link" href="#test">
           <Ico name="chevron-right" />
           <Ico name="book" />
           页面1
         </a>
       </li>
       <li>
-        <a className="mdl-navigation__link" href="#">
+        <a className="mdl-navigation__link" href="#test">
           <Ico name="chevron-right" />
           <Ico name="book" />
           页面2

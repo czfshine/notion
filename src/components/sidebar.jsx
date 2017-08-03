@@ -11,12 +11,12 @@ class SideBar extends Component {
           <Notebooks />
           <ul className="nav nav-sidebar">
             <li>
-              <a className="mdl-navigation__link" href="#">
+              <a className="mdl-navigation__link" href="#test">
                 下载桌面应用
               </a>
             </li>
             <li>
-              <a className="mdl-navigation__link" href="#">
+              <a className="mdl-navigation__link" href="#test">
                 帮助与回馈
               </a>
             </li>

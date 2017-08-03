@@ -6,7 +6,7 @@ class UserInfo extends Component {
     return (
       <ul className="nav nav-sidebar">
         <li>
-          <a className="mdl-navigation__link" href="#">
+          <a className="mdl-navigation__link" href="#test">
             <Badge text="1" overlap>
               <Icon name="account_box" />
             </Badge>

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-
-import Placeholder from './placeholder';
 import Editor from './editor';
 import { Content } from 'react-mdl';
 class Container extends Component {

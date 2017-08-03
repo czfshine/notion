@@ -4,7 +4,7 @@ import '../style/App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../dashboard.css';
 
-import { Layout, Textfield, Drawer, Navigation, Content } from 'react-mdl';
+import { Layout } from 'react-mdl';
 
 import HeadBar from './headbar';
 import SideBar from './sidebar';
