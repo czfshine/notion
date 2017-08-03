@@ -82,7 +82,7 @@
     "precommit": "lint-staged",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "client": "electron ."
+    "client": "npm run build && electron ."
   },
   "devDependencies": {
     "@storybook/react": "^3.1.9"
