@@ -80,6 +80,7 @@
     "build": "npm run build-css && node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "precommit": "lint-staged",
+    "story":"npm-run-all -p watch-css storybook",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "client": "npm run build && electron ."
